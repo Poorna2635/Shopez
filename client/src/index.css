@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc;
+  color: #253753;
+}
+
+/* Navbar */
+.navbar-brand span {
+  color: #f59e0b;
+}
+
+.search-bar input {
+  border-radius: 20px;
+  border: none;
+  padding: 8px 20px;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.search-bar input::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.search-bar input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+/* Hero */
+.hero-section {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* Product Card */
+.product-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: #fff;
+  cursor: pointer;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-img-wrapper {
+  height: 200px;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  position: relative;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ef4444;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+.price-current {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.price-original {
+  font-size: 14px;
+  color: #94a3b8;
+  text-decoration: line-through;
+}
+
+.price-off {
+  font-size: 13px;
+  color: #10b981;
+  font-weight: 600;
+}
+
+/* Filter Sidebar */
+.filter-sidebar {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  position: sticky;
+  top: 72px;
+}
+
+/* Cart Item */
+.cart-item-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cart-item-icon {
+  font-size: 48px;
+  width: 80px;
+  height: 80px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Order Summary */
+.order-summary-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  position: sticky;
+  top: 72px;
+}
+
+/* Auth */
+.auth-wrapper {
+  min-height: calc(100vh - 56px);
+  background: linear-gradient(135deg, #eff6ff, #f0fdf4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+/* Admin Sidebar */
+.admin-sidebar {
+  background: #1e293b;
+  min-height: calc(100vh - 56px);
+  padding: 20px 0;
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.admin-sidebar .nav-link {
+  color: #94a3b8;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s;
+}
+
+.admin-sidebar .nav-link:hover,
+.admin-sidebar .nav-link.active {
+  background: #334155;
+  color: #fff;
+}
+
+/* Stat cards */
+.stat-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+/* Toast override */
+.toast-container {
+  z-index: 9999;
+}
+
+/* Size buttons */
+.size-btn {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 6px 16px;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.size-btn:hover,
+.size-btn.active {
+  border-color: #2563eb;
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+/* Status badges */
+.status-placed   { background: #fef9c3; color: #854d0e; }
+.status-shipped  { background: #dbeafe; color: #1e40af; }
+.status-delivered{ background: #dcfce7; color: #166534; }
+.status-cancelled{ background: #fee2e2; color: #991b1b; }
+
+/* Category cards */
+.category-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-card:hover {
+  border-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.category-icon {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
